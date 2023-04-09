@@ -7,7 +7,7 @@
 } 
 nav{
   display: flex;
-  height: 70px;
+  height: 80px;
   width: 100%;
   background: #1b1b1b;
   align-items: center;
@@ -20,7 +20,7 @@ nav .logo{
   height: 45px;
   position: absolute;
   right: 50.5%;
-  bottom: 101%;
+  bottom: 100%;
   user-select: none;
   transform: scale(0.3);
 }
@@ -28,7 +28,6 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  
 }
 nav ul li{
   margin: 0 5px;
@@ -117,7 +116,7 @@ input[type="checkbox"]{
 }   
 .content div{
   margin-top: 50px;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -178,40 +177,3 @@ a{
       background-position: 400%;
     }
   }
-
-.button {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 50px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  height: 240px !important;
-  width: 800px;
-  font-s
-}
-
-.button:first-child:hover{
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-}
-.button:last-child:hover{
-  background: linear-gradient(90deg, #0c88ed, #43e671, #a537f4, #0c88ed);
-  background-size: 400%;
-}
-
-.slogan-parent {
-  text-align: center;
-  color: #1b1b1b;
-  position:absolute;
-  right:0px;
-  bottom:px;
-  left:0px;
-}   
-.slogan-parent div{
-  margin-top: 50px;
-  font-size: 40px;
-  font-weight: 700;
-}
