@@ -183,14 +183,13 @@ a{
   color: #f2f2f2;
   text-decoration: none;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
   height: 240px !important;
   width: 800px;
-  font-s
 }
 
 .button:first-child:hover{

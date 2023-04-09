@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>nblock Games</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="copypaste.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -22,12 +23,37 @@
             <li><a href="/games/">Games</a></li>
             <li><a href="https://nblock.cyclic.app">Proxy</a></li>
             <li><a class="active" href="/bookmarklets/">Bookmarklets</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact/">Contact</a></li>
          </ul>
       </nav>
       <div class="content">
          <div>
-
+  <div class='K2_CBox'>
+    <div class='CB_Heading'>
+      <span>ㅤDeveloper Tools (Eruda)</span>
+      <button id='copy1' class='C_box_main' onclick="copyC('copy1','code1')">
+        <i class='CBox_icn'></i>
+      </button>
+    </div>
+    <div id='code1'>
+      <pre>javascript:(function () { var script = document.createElement(&#039;script&#039;); script.src=&quot;//cdn.jsdelivr.net/npm/eruda&quot;; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</pre>
+    </div>
+  </div>
+        <div id='toastNotif' class='tNtf'></div> 
+              <script src="copypaste.js"></script>
+              <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                 <span>ㅤAuto Clicker</span>
+                 <button id='copy2' class='C_box_main' onclick="copyC('copy2','code2')">
+                   <i class='CBox_icn'></i>
+                 </button>
+               </div>
+               <div id='code2'>
+                 <pre>javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement(&quot;style&quot;);autoClickerStyleElement.innerHTML=&quot;*{cursor: crosshair !important;}&quot;;document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains(&quot;auto-clicker-target&quot;)) {e.target.classList.remove(&quot;auto-clicker-target&quot;);} else {e.target.classList.add(&quot;auto-clicker-target&quot;);}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener(&quot;click&quot;, addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains(&quot;auto-clicker-target&quot;)) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener(&quot;click&quot;, addClicker, 0);</pre>
+               </div>
+             </div>
+                   <div id='toastNotif' class='tNtf'></div> 
+                         <script src="copypaste.js"></script>
           </div>
       </div>
    </body>
