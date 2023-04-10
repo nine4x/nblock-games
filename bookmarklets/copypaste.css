@@ -2,12 +2,12 @@
 	position: relative;
 	background: #1e1e1e;
 	width: 80%;
-    height: 10%;
+	height: 10%;
 	border-radius: 6px;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 	padding: 10px;
-    margin-top: 5%;
-    margin-left:10%;
+	margin-top: 5%;
+	margin-left: 10%;
 }
 
 .K2_CBox .CB_Heading {
@@ -15,14 +15,14 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
-    height:10%;
+	height: 10%;
 }
 
 .K2_CBox .CB_Heading span {
 	margin: 0;
 	font-weight: 700;
 	font-family: inherit;
-	font-size: 1.1rem
+	font-size: 1.1rem;
 }
 
 .K2_CBox .C_box_main {
@@ -35,11 +35,15 @@
 	border-radius: 50%;
 	background: #004cbd;
 	transition: all .3s ease;
-	-webkit-transition: all .3s ease
+	-webkit-transition: all .3s ease;
+	transition: all 0.2s ease-in-out;
 }
 
 .K2_CBox .C_box_main:hover {
-	opacity: .8
+	opacity: .8;
+	-webkit-box-shadow: 0px 0px 19px 4px rgba(0, 76, 189, 0.81);
+	-moz-box-shadow: 0px 0px 19px 4px rgba(0, 76, 189, 0.81);
+	box-shadow: 0px 0px 19px 4px rgba(0, 76, 189, 0.81);
 }
 
 .K2_CBox .C_box_main .CBox_icn {
@@ -50,15 +54,15 @@
 	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><rect x='5.54615' y='5.54615' width='16.45385' height='16.45385' rx='4'/><path d='M171.33311,181.3216v-8.45385a4,4,0,0,1,4-4H183.787' transform='translate(-169.33311 -166.86775)'/></svg>");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center
+	background-position: center;
 }
 
 .K2_CBox .C_box_main.copied {
-	background: #2dcda7
+	background: #2dcda7;
 }
 
 .K2_CBox .C_box_main.copied .CBox_icn {
-	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>")
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>");
 }
 
 .K2_CBox pre {
@@ -79,16 +83,16 @@
 
 .K2_CBox pre::before,
 .K2_CBox pre::after {
-	content: ''
+	content: '';
 }
 
 .dark-Mode .K2_CBox {
-	background: #2d2d30
+	background: #2d2d30;
 }
 
 .dark-Mode .K2_CBox pre {
 	background: #252526;
-	color: #fffdfc
+	color: #fffdfc;
 }
 
 .tNtf span {
@@ -111,7 +115,7 @@
 	opacity: 0;
 	transition: all .1s ease;
 	animation: slideinwards 2s ease forwards;
-	-webkit-animation: slideinwards 2s ease forwards
+	-webkit-animation: slideinwards 2s ease forwards;
 }
 
 @media screen and (max-width:500px) {
@@ -119,64 +123,64 @@
 		margin-bottom: 20px;
 		left: 20px;
 		right: 20px;
-		font-size: 13px
+		font-size: 13px;
 	}
 }
 
 @keyframes slideinwards {
 	0% {
-		opacity: 0
+		opacity: 0;
 	}
 
 	20% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	50% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	80% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	100% {
 		opacity: 0;
 		bottom: -70px;
-		visibility: hidden
+		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes slideinwards {
 	0% {
-		opacity: 0
+		opacity: 0;
 	}
 
 	20% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	50% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	80% {
 		opacity: 1;
-		bottom: 0
+		bottom: 0;
 	}
 
 	100% {
 		opacity: 0;
 		bottom: -70px;
-		visibility: hidden
+		visibility: hidden;
 	}
 }
 
 .darkMode .tNtf span {
-	box-shadow: 0 10px 40px rgba(0, 0, 0, .2)
+	box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
 }

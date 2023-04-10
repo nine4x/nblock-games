@@ -104,19 +104,17 @@ input[type="checkbox"]{
 }
 .content{
   text-align: center;
-  height:100vh;
+  height: 97vh;
   width: 100vw;
   color: #1b1b1b;
   background: rgb(34,245,156);
   background: linear-gradient(180deg, rgba(34,245,156,1) 0%, rgba(0,212,255,1) 100%);
   position:absolute;
   right:0px;
-  bottom:px;
   left:0px;
 }   
 .content div{
-  margin-top: 50px;
-  font-size: 50px;
+  font-size: 47.5px;
   font-weight: 700;
 }
 
@@ -177,3 +175,76 @@ a{
       background-position: 400%;
     }
   }
+
+  .square {
+    width: 80%;
+    height:500px;
+    margin-top: 50px;
+    background-color: #272727;
+    text-align:center;
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(19px 19px 0px #000);
+  }
+
+  .text {
+    text-align: left;
+    margin-bottom: -99px;
+    margin-left: 35%;
+    color:#f2f2f2;
+    font-size: 100%;
+    padding: -99px !important;
+    margin-top:50px;
+  }
+
+.pfp {
+  text-align: left;
+  padding-bottom: 175px !important;
+  margin-top: -300px !important;
+  margin: 90px;
+}
+
+.name {
+  margin-right: 65%;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  
+}
+
+.text a {
+    transition: none;
+    background: rgba(0,0,0,0);
+    font-size: 33.5px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.text a:first-child:hover {
+  background: none;
+  background-size: 0%;
+}
+
+.text a:last-child:hover {
+  background: none;
+  background-size: 0%;
+}
+  .text a:first-child:hover:before,
+  .text a:last-child:hover:before{
+    opacity: 1;
+    z-index: -1;
+  }
+  .text a:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  p {
+  padding-top: 20px;
+  }
+
+.text h6 {
+  padding-top:20px;
+}
