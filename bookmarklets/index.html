@@ -28,33 +28,163 @@
       </nav>
       <div class="content">
          <div>
-  <div class='K2_CBox'>
-    <div class='CB_Heading'>
-      <span>ㅤDeveloper Tools (Eruda)</span>
-      <button id='copy1' class='C_box_main' onclick="copyC('copy1','code1')">
-        <i class='CBox_icn'></i>
-      </button>
-    </div>
-    <div id='code1'>
-      <pre>javascript:(function () { var script = document.createElement(&#039;script&#039;); script.src=&quot;//cdn.jsdelivr.net/npm/eruda&quot;; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</pre>
-    </div>
-  </div>
-        <div id='toastNotif' class='tNtf'></div> 
-              <script src="copypaste.js"></script>
-              <div class='K2_CBox'>
+            <div class='K2_CBox'>
                <div class='CB_Heading'>
-                 <span>ㅤAuto Clicker</span>
-                 <button id='copy2' class='C_box_main' onclick="copyC('copy2','code2')">
-                   <i class='CBox_icn'></i>
-                 </button>
+                  <span>ㅤDeveloper Tools (Eruda)</span>
+                  <button id='copy1' class='C_box_main' onclick="copyC('copy1','code1')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code1'>
+                  <pre>javascript:(function () { var script = document.createElement(&#039;script&#039;); script.src=&quot;//cdn.jsdelivr.net/npm/eruda&quot;; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤAuto Clicker</span>
+                  <button id='copy2' class='C_box_main' onclick="copyC('copy2','code2')">
+                  <i class='CBox_icn'></i>
+                  </button>
                </div>
                <div id='code2'>
-                 <pre>javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement(&quot;style&quot;);autoClickerStyleElement.innerHTML=&quot;*{cursor: crosshair !important;}&quot;;document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains(&quot;auto-clicker-target&quot;)) {e.target.classList.remove(&quot;auto-clicker-target&quot;);} else {e.target.classList.add(&quot;auto-clicker-target&quot;);}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener(&quot;click&quot;, addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains(&quot;auto-clicker-target&quot;)) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener(&quot;click&quot;, addClicker, 0);</pre>
+                  <pre>javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement(&quot;style&quot;);autoClickerStyleElement.innerHTML=&quot;*{cursor: crosshair !important;}&quot;;document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains(&quot;auto-clicker-target&quot;)) {e.target.classList.remove(&quot;auto-clicker-target&quot;);} else {e.target.classList.add(&quot;auto-clicker-target&quot;);}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener(&quot;click&quot;, addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains(&quot;auto-clicker-target&quot;)) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener(&quot;click&quot;, addClicker, 0);</pre>
                </div>
-             </div>
-                   <div id='toastNotif' class='tNtf'></div> 
-                         <script src="copypaste.js"></script>
-          </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤKickAss Asteroids</span>
+                  <button id='copy3' class='C_box_main' onclick="copyC('copy3','code3')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code3'>
+                  <pre>javascript:var%20KICKASSVERSION=&#039;2.0&#039;;var%20s%20=%20document.createElement(&#039;script&#039;);s.type=&#039;text/javascript&#039;;document.body.appendChild(s);s.src=&#039;//hi.kickassapp.com/kickass.js&#039;;void(0);</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤPiano</span>
+                  <button id='copy4' class='C_box_main' onclick="copyC('copy4','code4')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code4'>
+                  <pre>javascript:void(document.head.appendChild(document.createElement(&quot;script&quot;)).src=&quot;https://cdn.jsdelivr.net/gh/Krazete/bookmarklets/piano.js&quot;)</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤPerformance Monitor</span>
+                  <button id='copy5' class='C_box_main' onclick="copyC('copy5','code5')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code5'>
+                  <pre>javascript:(function(){var script=document.createElement(&#039;script&#039;);script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src=&#039;https://mrdoob.github.io/stats.js/build/stats.min.js&#039;;document.head.appendChild(script);})()</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤHistory Flooder</span>
+                  <button id='copy6' class='C_box_main' onclick="copyC('copy6','code6')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code6'>
+                  <pre>javascript:var num=prompt(&quot;History flood amount: &quot;); done = false; x = window.location.href; for (var i=1; i&lt;=num; i++) {history.pushState(0, 0, i==num?x:i.toString()); if(i==num){done=true}}if(done===true){alert(&quot;History flood successful! &quot;+window.location.href+&quot; now appears in your history &quot;+num+(num==1?&quot; time.&quot;:&quot; times.&quot;))}</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤEdpuzzle Cheats</span>
+                  <button id='copy7' class='C_box_main' onclick="copyC('copy7','code7')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code7'>
+                  <pre>javascript: var host = window.location.hostname; if (host == &quot;edpuzzle.com&quot;) { var r = new XMLHttpRequest(); r.open(&quot;GET&quot;, &quot;https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js&quot;, true); r.addEventListener(&quot;load&quot;, function(){eval(this.responseText);}); r.send();} else if (host == &quot;edpuzzle.hs.vc&quot;) {alert(&quot;To use this, drag this button into your bookmarks bar. Then, run it when you&#039;re on an Edpuzzle assignment.&quot;)} else {alert(&quot;Please run this on an Edpuzzle assignment.&quot;)}</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤDiscord GoGuardian Bypass</span>
+                  <button id='copy8' class='C_box_main' onclick="copyC('copy8','code8')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code8'>
+                  <pre>data:text/html,&lt;script&gt;window.location.href=&#039;https://ptb.discord.com/app?%27+%27e%27.repeat(16380)%3C/script%3E</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤPoki.com Complete Fullscreen</span>
+                  <button id='copy9' class='C_box_main' onclick="copyC('copy9','code9')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code9'>
+                  <pre>javascript:(function(){window.s0=document.createElement(&#039;script&#039;);window.s0.setAttribute(&#039;type&#039;,&#039;text/javascript&#039;);window.s0.setAttribute(&#039;src&#039;,&#039;https://bookmarkify.it/bookmarklets/51153/raw&#039;);document.getElementsByTagName(&#039;body&#039;)[0].appendChild(window.s0);})();</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤQuizlet Live Cheats</span>
+                  <button id='copy10' class='C_box_main' onclick="copyC('copy10','code10')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code10'>
+                  <pre>javascript:try{async function getSetId(pin){const res=await fetch(`https://quizlet.com/webapi/3.8/multiplayer/game-instance?gameCode=${pin}`);const json=await res.json();if(json.error)throw new Error(json.error.message);return json.gameInstance.itemId;}async function getSetData(setId){const res=await fetch(`https://quizlet.com/${setId}`);const text=await res.text();const data=text.match(/\\&quot;termIdToTermsMap\\&quot;:{.+?{.+?\\&quot;termSort\\&quot;:/gi)?.[0];if(!data)throw new Error(&quot;Failed to parse set data.&quot;);const parsed=JSON.parse(data.slice(21,-14).replaceAll(`\\&quot;`,`&quot;`));return[Object.fromEntries(Object.values(parsed).map(({word, definition})=&gt;[word, definition])),Object.fromEntries(Object.values(parsed).map(({word, definition})=&gt;[definition, word]))];}function getActiveQuestion(){try{const question=document.querySelector(&quot;.StudentPrompt-text&quot;).textContent;const answers=Array.from(document.querySelectorAll(&quot;.StudentAnswerOption-text&quot;));return[question, answers];}catch{}return[null,null];}(async()=&gt;{const pin=prompt(&quot;Enter PIN, like: XXX-XXX&quot;,&quot;&quot;).match(/[0-9a-zA-Z]/g).join(&quot;&quot;);if(pin.length!==6)throw new Error(&quot;Pin must be 6 characters in length.&quot;);const setId=await getSetId(pin);const[term2Def, def2Term]=await getSetData(setId);setInterval(async function(){const[question,choices]=getActiveQuestion();if(!question||!choices)return;if(question in term2Def){choices.forEach((choice)=&gt;{if(choice.textContent===term2Def[question])choice.style.fontWeight=&quot;bolder&quot;;});}else if(question in def2Term){choices.forEach((choice)=&gt;{if(choice.textContent===def2Term[question])choice.style.fontWeight=&quot;bolder&quot;;});}else{choices.forEach((choice)=&gt;{choice.style.fontWeight=&quot;normal&quot;;});}},0);})()}catch(err){alert(err)};void 0</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤ3D Layers Webpage</span>
+                  <button id='copy11' class='C_box_main' onclick="copyC('copy11','code11')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code11'>
+                  <pre>javascript:void(document.head.appendChild(document.createElement(&quot;script&quot;)).src=&quot;https://cdn.jsdelivr.net/gh/Krazete/bookmarklets/tri.min.js&quot;)</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+            <div class='K2_CBox'>
+               <div class='CB_Heading'>
+                  <span>ㅤReturn YouTube Dislike</span>
+                  <button id='copy12' class='C_box_main' onclick="copyC('copy12','code12')">
+                  <i class='CBox_icn'></i>
+                  </button>
+               </div>
+               <div id='code12'>
+                  <pre>javascript:(function(){window.s0=document.createElement(&#039;script&#039;);window.s0.setAttribute(&#039;type&#039;,&#039;text/javascript&#039;);window.s0.setAttribute(&#039;src&#039;,&#039;https://bookmarkify.it/bookmarklets/59042/raw&#039;);document.getElementsByTagName(&#039;body&#039;)[0].appendChild(window.s0);})();</pre>
+               </div>
+            </div>
+            <div id='toastNotif' class='tNtf'></div>
+            <script src="copypaste.js"></script>
+         </div>
       </div>
    </body>
 </html>
