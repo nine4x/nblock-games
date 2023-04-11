@@ -1,22 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
 
-#userPhoto{
-    width: 110px;
-    height: 110px;
-    display: block;
-    margin: 35px auto 20px;
-    border-radius: 50%;
-}
-
-.atrib{
-    text-align: center;
-    display: block;
-    font-size: 12px;
-    margin-bottom: 20px;
-    color: rgb(136, 136, 136);
-    padding: 17px;
-}
-
 .games{
     display: flex;
     width: 90%;
@@ -47,7 +30,7 @@
     box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     position: relative;
     overflow: hidden;
-    transition: .2s;
+    transition: all .2s ease-in-out;
 }
 
 .games a:not(.epci) b{
@@ -72,6 +55,7 @@
     top:0px;
     left:0px;
     z-index:3;
+    opacity:0;
 }
 
 .bar{
@@ -85,13 +69,12 @@
     left:0px;
 }
 
-.games a:not(.epci):hover .bar{
+.games a:not(.epci) .bar{
     height:40px;
 }
 
 .games a:not(.epci):hover{
-    translate: 0 1px;
-    box-shadow: none;
+    transform: scale(1.05);
 }
 
 .game_title{
@@ -99,18 +82,6 @@
     display: flex;
     justify-content: center;
     
-}
-
-.search{
-    width:300px;
-    height:30px;
-    background: #292929;
-    border:1px solid #353535;
-    border-radius:5px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
-    color:#fff;
-    padding-left:10px;
-    transition: .2s;
 }
 
 .button{
@@ -128,13 +99,6 @@
 }
 
 .button:hover,.button:focus{
-    box-shadow: none;
-    outline: none;
-    border-color:#00bb00;
-}
-
-.search:focus{
-    filter: brightness(95%);
     box-shadow: none;
     outline: none;
     border-color:#00bb00;
