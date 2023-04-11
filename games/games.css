@@ -1,17 +1,4 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
-:root {
-    --bgColor:#1C1C1C;
-    --accentColor: #E6E6E6;
-    --bgColorg:#000000;
-    --accentColorg: #d4af37;
-    --bgColors:#000000;
-    --accentColors: #a8a8a9;
-    --bgColorb:#000000;
-    --accentColorb: #cd7f32;
-    --font: 'Karla', sans-serif;
-    --firstName: 'John';
-    --lastName: 'Doe';
-}
 
 #userPhoto{
     width: 110px;
@@ -27,7 +14,6 @@
     font-size: 12px;
     margin-bottom: 20px;
     color: rgb(136, 136, 136);
-    font-family: var(--font);
     padding: 17px;
 }
 
@@ -161,7 +147,7 @@
     z-index:6;
     box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
-
+ 
 .badge2p{
     position: absolute;
     top:5px;
