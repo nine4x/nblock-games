@@ -9,7 +9,6 @@ window.onload = async () => {
     };
   
     const pick = (array) => array[Math.floor(Math.random() * array.length)];
-    const hacked_statements = ["Yes", "Maybe", "Most Likely", "Highly Probable", "Potentially", "Unlikely But Still Possible", "Almost Certainly", "Definitely", "Absolutely"];
   
     try {
       const memes = [];
@@ -87,7 +86,7 @@ window.onload = async () => {
         push("Current Time", `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`);
         if (ip_data) push("Timezone", ip_data.timezone);
         push("Timezone Offset", date.getTimezoneOffset() / 60, " hours");
-        push("Hacked", pick(hacked_statements));
+        push("Hacked", "Yes");
       };
   
       start.onclick = async () => {
@@ -100,7 +99,7 @@ window.onload = async () => {
           if (step >= memes.length) step = -Infinity;
           if (step < 0) return clearInterval(interval);
           if (time >= 0) {
-            if (step == 0) document.title = `lmao this you? [${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}]`;
+            if (step == 0) document.title = `L ${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}`;
             const el = document.createElement("span");
             el.textContent = `${memes[step]}`;
             step++;
